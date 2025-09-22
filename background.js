@@ -24,6 +24,7 @@ function triggerIntent(videoUrl) {
   let intentOpts = [
     'action=android.intent.action.VIEW',
     'scheme=' + scheme,
+    'package=com.mxtech.videoplayer.ad',
     'type=video/*',
   ];
   browser.tabs.create({
